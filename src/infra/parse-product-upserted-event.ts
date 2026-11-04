@@ -131,7 +131,10 @@ export function parseProductUpsertedEvent(
       eventId: event.id,
       occurredAt,
       productUpdatedAt,
-      update: { productId: data.productId, displayName: data.name },
+      update: {
+        productId: data.productId,
+        displayName: data.name,
+      },
     },
   };
 }
